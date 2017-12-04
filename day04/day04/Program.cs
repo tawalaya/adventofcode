@@ -16,7 +16,7 @@ namespace day04
 			return count;
 		}
 
-		public static bool star6(String passphrase)
+		public static bool star7(String passphrase)
 		{
 			HashSet<String> wordBucket = new HashSet<string>();
 			foreach (String element in passphrase.Split(null))
@@ -34,7 +34,7 @@ namespace day04
 
 		}
 
-		public static bool star7(String passphrase){
+		public static bool star8(String passphrase){
 			HashSet<String> wordBucket = new HashSet<string>();
 			foreach (String element in passphrase.Split(null))
 			{
@@ -78,9 +78,9 @@ namespace day04
 
 		public static void Main(string[] args)
 		{
-			string[] lines = System.IO.File.ReadAllLines(@"star6.txt");
-			Console.WriteLine(test(lines,star6));
+			string[] lines = System.IO.File.ReadAllLines(@"input.txt");
 			Console.WriteLine(test(lines,star7));
+			Console.WriteLine(test(lines,star8));
 		}
 	}
 }
